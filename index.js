@@ -37,6 +37,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   
   const saveNote = function() {
     updateLastAutoSaveText();
+
+    fs.writeFile('note', "...data...", function (err) {
+        if (err) throw err;
+      });
   };
 
   autoSaveTitleText.innerHTML = `This page autosaves your note every ${AUTO_SAVE_INTERVAL} seconds`
