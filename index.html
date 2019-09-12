@@ -6,30 +6,18 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/filer/dist/filer.min.js"></script>
-    <script src="https://raw.githubusercontent.com/jacob-shuman/midnote/master/index.js"></script>
+    <script type="text/js" src="https://raw.githubusercontent.com/jacob-shuman/midnote/master/index.js"></script>
   </head>
   <body>
     <h1>MidNote</h1>
-    <div id="note" contenteditable></div>
-
-    <!-- Tags -->
-
-    <hr />
-    <h2>All Tags</h2>
-    <div id="tags"></div>
-
-    <hr />
-
-    <h2>New Tag</h2>
-    <input id="tagEntry" type="text" />
-    <button id>Save Tag</button>
+    <div id="note" contenteditable>default</div>
+    <button id="saveNoteButton">Save Note</button>
 
     <p id="autoSaveTitle"></p>
-    <p id="lastAutoSaveTime"></p>
+    <p id="lastSaveTime"></p>
 
     <hr />
 
-    <!-- TODO: reset saved note functionality -->
     <h2>Reset</h2>
     <div>
       <label for="resetConfirmCheckbox">Are you sure you want to clear the saved note?</label>
@@ -39,6 +27,6 @@
         type="checkbox"
       />
     </div>
-    <button>Reset Saved Note</button>
+    <button id="resetNoteButton">Reset Saved Note</button>
   </body>
 </html>
