@@ -6,6 +6,30 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/filer/dist/filer.min.js"></script>
+  </head>
+  <body>
+    <h1>MidNote</h1>
+    <div id="note" contenteditable>default</div>
+    <button id="saveNoteButton">Save Note</button>
+
+    <p id="autoSaveTitle"></p>
+    <p id="lastSaveTime"></p>
+
+    <hr />
+
+    <h2>Reset</h2>
+    <div>
+      <label for="resetConfirmCheckbox"
+        >Are you sure you want to clear the saved note?</label
+      >
+      <input
+        id="resetConfirmCheckbox"
+        name="resetConfirmCheckbox"
+        type="checkbox"
+      />
+    </div>
+    <button id="resetNoteButton">Reset Saved Note</button>
+
     <script type="text/javascript">
       /*
         Saved Data Structure
@@ -103,28 +127,6 @@
         });
       });
     </script>
-  </head>
-  <body>
-    <h1>MidNote</h1>
-    <div id="note" contenteditable>default</div>
-    <button id="saveNoteButton">Save Note</button>
-
-    <p id="autoSaveTitle"></p>
-    <p id="lastSaveTime"></p>
-
-    <hr />
-
-    <h2>Reset</h2>
-    <div>
-      <label for="resetConfirmCheckbox"
-        >Are you sure you want to clear the saved note?</label
-      >
-      <input
-        id="resetConfirmCheckbox"
-        name="resetConfirmCheckbox"
-        type="checkbox"
-      />
-    </div>
-    <button id="resetNoteButton">Reset Saved Note</button>
+    
   </body>
 </html>
